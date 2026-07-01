@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "eleventy --serve --incremental",
-    "build": "rm -rf public_html/* && eleventy",
-    "deploy": "tar -c -z -f public_html.tar.gz public_html/* && scp public_html.tar.gz mimi:"
+    "build": "eleventy && tailwindcss -i src/assets/css/tailwind.css -o public_html/assets/css/style.css",
+    "dev:site": "eleventy --serve",
+    "dev:css": "tailwindcss -i src/assets/css/tailwind.css -o public_html/assets/css/style.css --watch",
+    "deploy": "tar -czf public_html.tar.gz public_html/* && scp public_html.tar.gz mimi:"
   },
   "keywords": [],
   "author": "",
