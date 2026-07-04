@@ -1,10 +1,10 @@
 {% for list in links %}
-    <div class="section">
-        <h2 class="sectionTitle sectionTitle--collapsible">{{ list.section }}</h2>
-        <ul class="linkList">
+    <div>
+        <h2 class="collapsible underline cursor-pointer font-rserif text-2xl">{{ list.section }}</h2>
+        <ul class="hidden">
             {% for link in list.bookmarks %}
-                <li class="linkList__item">
-                    <a class="linkList__link link" href="{{ link.url }}">{{ link.name }}</a>
+                <li>
+                    <a href="{{ link.url }}">{{ link.name }}</a>
                 </li>
             {% endfor %}
         </ul>

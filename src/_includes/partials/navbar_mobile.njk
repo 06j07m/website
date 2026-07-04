@@ -1,22 +1,22 @@
-<header class="nav nav__mobileWrap">
-    <div class="nav--mobile">
-        <div class="nav__left">
-            <a class="navTab--home link--hidden" href="/~mliu102/">
-                <span class="nav__siteTitle">
+<header class="border-b-2 p-4 m-0 md:hidden">
+    <div class="sm:flex sm:flex-row">
+        <div class="grow">
+            <a class="text-lg no-underline" href="/~mliu102/">
+                <span>
                     Mona Liu
                 </span>
             </a>
         </div>
-        <div class="nav__right">
-            <button class="nav__hamburger">
+        <div class="flex">
+            <button class="mobileMenuToggle">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
     </div>
-    <div class="nav__mobileMenu">
+    <div class="mobileMenu sm:flex sm:flex-col sm:p-3 sm:w-full sm:text-center hidden">
         {% for itm in menu %}
-            <div class="navTab--mobile">
-                <a class="navTab__link link" href="/~mliu102/{{ itm.slug }}">{{ itm.name }}</a>
+            <div class="p-2 mx-auto my-0 text-lg">
+                <a href="/~mliu102/{{ itm.slug }}">{{ itm.name }}</a>
             </div>
         {% endfor %}
     </div>

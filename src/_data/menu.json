@@ -1,9 +1,7 @@
-{
-    "menu": [
-        {"slug": "", "name": "Home"},
-        {"slug": "about", "name": "About"},
-        {"slug": "projects", "name": "Projects"},
-        {"slug": "research", "name": "Research"},
-        {"slug": "fun", "name": "Fun"}
-    ]
-}
+[
+    {"slug": "", "name": "Home"},
+    {"slug": "about", "name": "About"},
+    {"slug": "projects", "name": "Projects"},
+    {"slug": "research", "name": "Research"},
+    {"slug": "fun", "name": "Fun"}
+]

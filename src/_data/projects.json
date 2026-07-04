@@ -1,0 +1,150 @@
+[
+    {
+        "name": "McRUN Club Website",
+        "tools": "Webflow",
+        "description": "The club website for McGill Students Running Club",
+        "links": [
+            {
+                "url": "mcrun.webflow.io",
+                "type": "site"
+            }
+        ]
+    },
+    {
+        "name": "Personal Website",
+        "tools": "11ty (eleventy), Nunjucks, HTML, CSS, JavaScript",
+        "description": "My personal portfolio and bookmarks website (this!)",
+        "links": [
+            {
+                "url": "cs.mcgill.ca/~mliu102/",
+                "type": "site"
+            },
+            {
+                "url": "mliu102/new_website",
+                "type": "gitlab"
+            }
+        ]
+    },
+    {
+        "name": "Marteler le Martlet",
+        "tools": "Unity, C#, GraphicsGale",
+        "description": "McGill-themed idle clicker game; category winner at McHacks 12",
+        "links": [
+            {
+                "url": "marteler-le-martelet",
+                "type": "devpost"
+            },
+            {
+                "url": "FlyingSheep7846/mchacks",
+                "type": "github"
+            }
+        ]
+    },
+    {
+        "name": "Sociouts",
+        "tools": "Javascript, Next.js, Express, MongoDB, OpenStreetMaps",
+        "description": "Social outing planner; entry at Codejam 14",
+        "links": [
+            {
+                "url": "sociouts",
+                "type": "devpost"
+            },
+            {
+                "url": "lilly-g/codejam14",
+                "type": "github"
+            }
+        ]
+    },
+    {
+        "name": "MADCAS",
+        "tools": "Python, Flask, beautifulsoup",
+        "description": "Marvel and DC character appearance sorter that works by scraping the wikis",
+        "links": [
+            {
+                "url": "06j07m/MADCAS",
+                "type": "github"
+            }
+        ]
+    },
+    {
+        "name": "Supernatural Roulette",
+        "tools": "Python, Flask, Figma",
+        "description": "Random episode generator for Supernatural (2005-2020)",
+        "links": [
+            {
+                "url": "06j07m/supernatural-roulette",
+                "type": "github"
+            }
+        ]
+    },
+    {
+        "name": "WiseBite",
+        "tools": "Python, streamlit, tesseract",
+        "description": "AI tool to scan nutrition labels; entry at MAIS Hacks 2023",
+        "links": [
+            {
+                "url": "cd-lwr48a",
+                "type": "devpost"
+            },
+            {
+                "url": "Gur-Lal/MaisHacks",
+                "type": "github"
+            }
+        ]
+    },
+    {
+        "name": "Simple Solitaire",
+        "tools": "Java Swing",
+        "description": "Basic Klondike Solitaire game from scratch using linked lists",
+        "links": [
+            {
+                "url": "06j07m/simple-solitaire",
+                "type": "github"
+            }
+        ]
+    },
+    {
+        "name": "Markanoid",
+        "tools": "Java Swing",
+        "description": "Mock Arkanoid from scratch with 2 different levels",
+        "links": [
+            {
+                "url": "06j07m/markanoid",
+                "type": "github"
+            }
+        ]
+    },
+    {
+        "name": "Typething",
+        "tools": "Python, Pygame",
+        "description": "Typing game from scratch with different modes",
+        "links": [
+            {
+                "url": "06j07m/typething",
+                "type": "github"
+            }
+        ]
+    },
+    {
+        "name": "Retro Paint",
+        "tools": "Python, Pygame, tkinter",
+        "description": "Drawing game from scratch with tools, colour picker, open/save, and music",
+        "links": [
+            {
+                "url": "06j07m/retro-paint",
+                "type": "github"
+            }
+        ]
+    },
+    {
+        "name": "More On Post Secondary Website",
+        "tools": "Wix, Inkscape",
+        "description": "Informative website on post-secondary options for students; made for BLC",
+        "links": [
+            {
+                "url": "moreonpostsecondary.wordpress.com",
+                "type": "site"
+            }
+        ]
+    }
+]

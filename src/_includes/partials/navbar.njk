@@ -1,15 +1,15 @@
-<header class="nav nav--desktop">
-    <div class="nav__left">
-        <a class="navTab--home link--hidden" href="/~mliu102/">
-            <span class="nav__siteTitle">
+<header class="border-b-2 p-4 m-0 sm:hidden md:flex md:flex-row md:flex-wrap">
+    <div class="grow">
+        <a class="text-lg no-underline" href="/~mliu102/">
+            <span>
                 Mona Liu
             </span>
         </a>
     </div>
-    <div class="nav__right">
+    <div class="flex">
         {% for itm in menu %}
-            <span class="navTab">
-                <a class="navTab__link link" href="/~mliu102/{{ itm.slug }}">{{ itm.name }}</a>
+            <span class="px-3">
+                <a href="/~mliu102/{{ itm.slug }}">{{ itm.name }}</a>
             </span>
         {% endfor %}
     </div>

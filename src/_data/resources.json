@@ -1,7 +1,5 @@
-{
-    "resourcepages" : [
-        {"slug": "useful", "name": "useful bookmarks"},
-        {"slug": "software", "name": "software bookmarks"},
-        {"slug": "school", "name": "school bookmarks"}
-    ]
-}
+[
+    {"slug": "useful", "name": "useful bookmarks"},
+    {"slug": "software", "name": "software bookmarks"},
+    {"slug": "school", "name": "school bookmarks"}
+]

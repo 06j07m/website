@@ -1,19 +1,17 @@
 ---
-title: resources
+title: Resources
 layout: layouts/base.njk
 ---
 
-<h1 class="title">{{ title }}</h1>
-
 <p>Some links that I've collected over the years:</p>
 
-<ul class="links fa-ul">
-    {% for itm in resourcepages %}
-        <li class="links__item">
-            <span class="fa-li links__icon">
+<ul class="fa-ul">
+    {% for itm in resources %}
+        <li class="flex items-center px-1/2 py-0">
+            <span class="fa-li">
                 <i class="fa-solid fa-chevron-right"></i>
             </span>
-            <a class="link" href="/~mliu102/resources/{{ itm.slug }}">
+            <a href="/~mliu102/resources/{{ itm.slug }}">
                 {{ itm.name }}
             </a>
         </li>

@@ -3,30 +3,26 @@ title: Projects
 layout: layouts/base.njk
 ---
 
-<h1 class="title">{{ title }}</h1>
-
-{# {% include "partials/construction.njk" %} #}
-
 {% for proj in projects %}
-    <div class="project">
-        <h2 class="projectTitle">{{ proj.name }}</h2>
-        <p class="projectTools">{{ proj.tools }}</p>
-        <p class="projectDesc">{{ proj.description }}</p>
-        <div class="projectLinks">
+    <div class="p-6 mt-3 mb-6">
+        <h2 class="m-0">{{ proj.name }}</h2>
+        <p class="italic text-sm mt-1">{{ proj.tools }}</p>
+        <p>{{ proj.description }}</p>
+        <div class="mx-2 my-0">
             {% for lk in proj.links %}
-                <span class="projectLinks__item">
+                <span>
                     {% if lk.type == 'github' %}
-                        <i class="projectLinks__icon fa-brands fa-github-alt"></i>
-                        <a class="projectLinks__link link" href="{{ lk.url }}">{{ lk.url }}</a>
+                        <i class="fa-brands fa-github-alt"></i>
+                        <a href="{{ lk.url }}">{{ lk.url }}</a>
                     {% elseif lk.type == 'gitlab' %}
-                        <i class="projectLinks__icon fa-brands fa-gitlab"></i>
-                        <a class="projectLinks__link link" href="https://gitlab.cs.mcgill.ca/{{ lk.url }}">{{ lk.url }}</a>
+                        <i class="fa-brands fa-gitlab"></i>
+                        <a href="https://gitlab.cs.mcgill.ca/{{ lk.url }}">{{ lk.url }}</a>
                     {% elseif lk.type == 'site' %}
-                        <i class="projectLinks__icon fa-solid fa-globe"></i>
-                        <a class="projectLinks__link link" href="https://{{ lk.url }}">{{ lk.url }}</a>
+                        <i class="fa-solid fa-globe"></i>
+                        <a href="https://{{ lk.url }}">{{ lk.url }}</a>
                         {% elseif lk.type == 'devpost' %}
-                        <i class="projectLinks__icon fa-solid fa-laptop-code"></i>
-                        <a class="projectLinks__link link" href="https://devpost.com/software/{{ lk.url }}">{{ lk.url }}</a>
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <a href="https://devpost.com/software/{{ lk.url }}">{{ lk.url }}</a>
                     {% endif %}
                 </span>
                 <br>

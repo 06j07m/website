@@ -12,18 +12,19 @@
     <title>{{ title }} | Mona Liu</title>
 </head>
 
-<body class="site">
+<body class="m-0 font-rsans">
     {% include "../partials/navbar.njk" %}
     {% include "../partials/navbar_mobile.njk" %}
-    <main class="main">
+    <main class="mx-auto my-0 min-h-4/5 sm:width-4/5 sm:p-4 sm:text-wrap md:width-3/5 md:p-8">
+        <h1 class="text-4xl font-rserif font-bold">{{ title }}</h1>
         {{ content | safe }}
     </main>
     {% include "../partials/footer.njk" %}
     <script>
-        $(".nav__hamburger").on("click", function () {
-            $(".nav__mobileMenu").slideToggle();
+        $(".mobileMenuToggle").on("click", function () {
+            $(".mobileMenu").slideToggle();
         });
-        $(".sectionTitle--collapsible").on("click", function () {
+        $(".collapsible").on("click", function () {
             $(this).next().slideToggle('slow')
         });
     </script>
