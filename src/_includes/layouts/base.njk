@@ -13,13 +13,23 @@
 </head>
 
 <body class="m-0 font-rsans">
-    {% include "../partials/navbar.njk" %}
-    {% include "../partials/navbar_mobile.njk" %}
-    <main class="mx-auto my-0 min-h-4/5 sm:width-4/5 sm:p-4 sm:text-wrap md:width-3/5 md:p-8">
-        <h1 class="text-4xl font-rserif font-bold">{{ title }}</h1>
+    {% include "../partials/header.njk" %}
+
+    <div class="mx-auto my-0 min-h-4/5 flex justify-between sm:flex-col-reverse md:flex-row md:gap-x-4">
+
+    <aside class="sm:p-4 md:p-8 md:w-1/5">
+        {% include "../partials/sidebar.njk" %}
+    </aside>
+
+    <main class="sm:p-4 sm:text-wrap md:p-8 md:w-4/5">
+        <h1 class="text-2xl font-rserif font-bold">{{ title }}</h1>
         {{ content | safe }}
     </main>
+
+    </div>
+
     {% include "../partials/footer.njk" %}
+    
     <script>
         $(".mobileMenuToggle").on("click", function () {
             $(".mobileMenu").slideToggle();

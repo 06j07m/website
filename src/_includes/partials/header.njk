@@ -1,0 +1,42 @@
+<header class="border-b-2 p-4 m-0">
+    <div class="sm:hidden md:flex md:flex-row md:flex-wrap">
+        <div class="grow">
+            <a class="text-lg no-underline" href="/~mliu102/">
+                <span>
+                    Mona Liu
+                </span>
+            </a>
+        </div>
+        <div class="flex">
+            {% for itm in menu %}
+            <span class="px-3">
+                <a href="/~mliu102/{{ itm.slug }}">{{ itm.name }}</a>
+            </span>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="md:hidden">
+        <div class="sm:flex sm:flex-row">
+            <div class="grow">
+                <a class="text-lg no-underline" href="/~mliu102/">
+                    <span>
+                        Mona Liu
+                    </span>
+                </a>
+            </div>
+            <div class="flex">
+                <button class="mobileMenuToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div class="mobileMenu sm:flex sm:flex-col sm:p-3 sm:w-full sm:text-center hidden">
+            {% for itm in menu %}
+            <div class="p-2 mx-auto my-0 text-lg">
+                <a href="/~mliu102/{{ itm.slug }}">{{ itm.name }}</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</header>
